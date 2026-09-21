@@ -36,7 +36,7 @@ As an MLE you need to understand:
 
 ### Reinforcement Learning Algorithms :robot:
 
-- __Q-Learning__ (_Tabular_): A basic algo for discrete action spaces.
+- __Q-Learning__ (_  Tabular_): A basic algo for discrete action spaces.
 - __Deep Q-Network__ (_DQN_): Uses a neural network to approximate the Q-function.
 - __Policy Gradient__ (_REINFORCE_): A policy-based method that directly optimizes the policy.
 - __Proximal Policy__ Optimization (_PPO_): A modern policy gradient method with clipped objective.
