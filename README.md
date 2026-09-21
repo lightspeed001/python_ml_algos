@@ -1,4 +1,5 @@
 # python_ml_algos
+<<<<<<< HEAD
 ## ML Algorithms along with their PyTorch, Scikit Learn and JAX implementation
 
 ### 1. ML Models Math Families :people_hugging:
@@ -32,3 +33,6 @@ As an MLE you need to understand:
 3. How does it **optimize** that loss function (How does it get better)?
 
 
+=======
+## ML Algorithms along with their PyTorch implementation
+>>>>>>> 4a8f8d88e8e73b37ce323ce2cd5bcad069bc8970
