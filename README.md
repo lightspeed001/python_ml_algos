@@ -23,7 +23,19 @@ As an MLE you need to understand:
 - Support Vector Machines (Great for complex boundary lines)
 - K-Means Clustering (The unsuervised standard)
 - Principal COmponent Analysis (PCS for dimentionality reduction)
-- Multi-Layer Perceptrons (The gateway to Deep Learning)
+- Multi-Layer Perceptrons (The gateway to Deep Learning. The Simple Neural Network)
+
+### Deep Learning Algorithms :key:
+
+- **Logistic Regression**: For small tabular datasets, a classical model is often a better starting point than deep learning.
+- **Multilayer perception (MLP)**: An MLP is useful for tabular data and general purpose classification or regression.
+- **Convolutional Neural Network (CNN)** - CNN's are commonly used for images because convolutions detect local patterns such as edges, textures and shapes.
+- **LSTM for sequence classification**: LSTM are useful for sequences such as time series, sensor readings, and token sequences.
+- **Transformer encoder (_for sequence classification_)**: Transformers are widely used for language, time series, and other sequence problems. Unlike an LSTM a Transformer can process sequence positions in parrallel.
+- **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
+
+### Reinforcement Learning Algorithms :robot:
+- 
 
 **Questions to ask?**
 
