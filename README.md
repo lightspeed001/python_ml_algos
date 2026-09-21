@@ -17,30 +17,30 @@ As an MLE you need to understand:
 
 ### 3. The Essential 7 :rescue_helmet:
 
-- Linear & Logistic Regression (The baseline constants)
-- Decision Trees & Random Forests (The go to for tabular data)
-- Gradient Boosting Machines (XGBoost/LightGBM)
-- Support Vector Machines (Great for complex boundary lines)
-- K-Means Clustering (The unsuervised standard)
-- Principal COmponent Analysis (PCS for dimentionality reduction)
-- Multi-Layer Perceptrons (The gateway to Deep Learning. The Simple Neural Network)
+- __Linear & Logistic Regression__ (The baseline constants)
+- __Decision Trees & Random Forests__ (The go to for tabular data)
+- __Gradient Boosting Machines__ (XGBoost/LightGBM)
+- __K-Means Clustering__ (The unsupervised standard)
+- __Support Vector Machines__ (Great for complex boundary lines)
+- __Principal Component Analysis__ (PCS for dimentionality reduction)
+- __Multi-Layer Perceptrons__ (The gateway to Deep Learning. The Simple Neural Network)
 
 ### Deep Learning Algorithms :key:
 
 - **Logistic Regression**: For small tabular datasets, a classical model is often a better starting point than deep learning.
-- **Multilayer perception (MLP)**: An MLP is useful for tabular data and general purpose classification or regression.
-- **Convolutional Neural Network (CNN)** - CNN's are commonly used for images because convolutions detect local patterns such as edges, textures and shapes.
+- **Multilayer perception (_MLP_)**: An MLP is useful for tabular data and general purpose classification or regression.
+- **Convolutional Neural Network (_CNN_)** - CNN's are commonly used for images because convolutions detect local patterns such as edges, textures and shapes.
 - **LSTM for sequence classification**: LSTM are useful for sequences such as time series, sensor readings, and token sequences.
 - **Transformer encoder (_for sequence classification_)**: Transformers are widely used for language, time series, and other sequence problems. Unlike an LSTM a Transformer can process sequence positions in parrallel.
 - **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
 
 ### Reinforcement Learning Algorithms :robot:
 
-- Q-Learning (Tabular): A basic algo for discrete action spaces.
-- Deep Q-Network (DQN): Uses a neural network to approximate the Q-function.
-- Policy Gradient (REINFORCE): A policy-based method that directly optimizes the policy.
-- Proximal Policy Optimization (PPO): A modern policy gradient method with clipped objective.
-- Soft Actor-Critic (SAC): A state-of-the-art RL algorithm that optimizes for entropy-regulated rewards.
+- __Q-Learning__ (_Tabular_): A basic algo for discrete action spaces.
+- __Deep Q-Network__ (_DQN_): Uses a neural network to approximate the Q-function.
+- __Policy Gradient__ (_REINFORCE_): A policy-based method that directly optimizes the policy.
+- __Proximal Policy__ Optimization (_PPO_): A modern policy gradient method with clipped objective.
+- __Soft Actor-Critic__ (_SAC_): A state-of-the-art RL algorithm that optimizes for entropy-regulated rewards.
 
 **Questions to ask?**
 
