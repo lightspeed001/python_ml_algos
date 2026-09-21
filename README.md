@@ -1,5 +1,5 @@
 # python_ml_algos
-## ML Algorithms along with their PyTorch, Scikit Learn and JAX implementation
+## ML, DL and RL Algorithms along with their PyTorch, Scikit Learn, Gymnasium and JAX implementation
 
 ### 1. ML Models Math Families :people_hugging:
 
