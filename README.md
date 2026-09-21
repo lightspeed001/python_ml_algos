@@ -35,7 +35,12 @@ As an MLE you need to understand:
 - **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
 
 ### Reinforcement Learning Algorithms :robot:
-- 
+
+- Q-Learning (Tabular): A basic algo for discrete action spaces.
+- Deep Q-Network (DQN): Uses a neural network to approximate the Q-function.
+- Policy Gradient (REINFORCE): A policy-based method that directly optimizes the policy.
+- Proximal Policy Optimization (PPO): A modern policy gradient method with clipped objective.
+- Soft Actor-Critic (SAC): A state-of-the-art RL algorithm that optimizes for entropy-regulated rewards.
 
 **Questions to ask?**
 
