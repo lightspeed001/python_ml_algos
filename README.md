@@ -30,7 +30,7 @@ As an MLE you need to understand:
 - **Logistic Regression**: For small tabular datasets, a classical model is often a better starting point than deep learning.
 - **Multilayer perception (_MLP_)**: An MLP is useful for tabular data and general purpose classification or regression.
 - **Convolutional Neural Network (_CNN_)** - CNN's are commonly used for images because convolutions detect local patterns such as edges, textures and shapes.
-- **LSTM for sequence classification**: LSTM are useful for sequences such as time series, sensor readings, and token sequences.
+- **LSTM (_for sequence classification_)**: LSTM are useful for sequences such as time series, sensor readings, and token sequences.
 - **Transformer encoder (_for sequence classification_)**: Transformers are widely used for language, time series, and other sequence problems. Unlike an LSTM a Transformer can process sequence positions in parrallel.
 - **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
 
