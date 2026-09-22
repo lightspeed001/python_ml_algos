@@ -34,6 +34,14 @@ As an MLE you need to understand:
 - **Transformer encoder (_for sequence classification_)**: Transformers are widely used for language, time series, and other sequence problems. Unlike an LSTM a Transformer can process sequence positions in parrallel.
 - **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
 
+### Advanced Deep Learning Algorithms 
+
+- Diffusion: 
+- GNN: 
+- Mixture of Experts: 
+- NAS: 
+- Neural ODE: 
+
 ### Reinforcement Learning Algorithms :robot:
 
 - __Q-Learning__ (_  Tabular_): A basic algo for discrete action spaces.
