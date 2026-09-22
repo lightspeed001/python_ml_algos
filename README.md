@@ -15,7 +15,7 @@ As an MLE you need to understand:
 - **The Constraints**: Does it handle missing data well? (eg. Random Forests do, SVMs do not)
 - **The Trade-offs**: Is it fast to train but slow to predict? (eg. KNN)
 
-### 3. The Essential 7 :rescue_helmet:
+### 3. The Essential 7 :rescue_worker_helmet:
 
 - __Linear & Logistic Regression__ (The baseline constants)
 - __Decision Trees & Random Forests__ (The go to for tabular data)

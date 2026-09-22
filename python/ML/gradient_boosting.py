@@ -1,5 +1,5 @@
 # gradient boosting machine (GBM)
-from sklearn.ensamble import GradientBoostingRegressor
+from sklearn.ensamble import GradientBoostingRegressor # boosting for regression
 
 # Regression target
 y_reg = X @ np.array([1.2, -0.0, 0.5, 2.0]) + np.random.randn(150) * 0.3
