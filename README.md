@@ -36,11 +36,11 @@ As an MLE you need to understand:
 
 ### Advanced Deep Learning Algorithms 
 
-- Diffusion: 
-- GNN: 
-- Mixture of Experts: 
-- NAS: 
-- Neural ODE: 
+- **Diffusion**: A network predicts noise conditioned on a timestamp, then iteratively denoises
+- **GNN**: For Non_euclidean data eg. molecules, social networks, recommendation systems
+- **Mixture of Experts**: Scalable models with sparce activation eg. Googles Switch Transformers
+- **NAS**: Neural Architecture Search (NAS). Automatically design optimal architectures.
+- **Neural ODE**: Continuos depth models eg. irregular time series or physics informed ML
 
 ### Reinforcement Learning Algorithms :robot:
 
