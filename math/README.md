@@ -11,8 +11,8 @@ Here's a mapping of common ML/DL/RL jargon into simple mathematical terms.
 |  **Label**           |  Scalar (or vector)                  |  Output/target (eg., `y` for regression, `c` for classification)    |
 |  **Model**           |  Function `f: X → Y`                 |  Maps inputs (`X`) to outputs (`Y`).                                |
 |  **Loss Function**   |  Scalar Function `L(y, ŷ)`           |  Measures error between true (`y`) and predicted (`ŷ`) values       |
-|  **Gradient**        |  Vector of partial derivatives `VL`  |  Direction of steepest ascent in loss.                              |
-|  **Optimizer**       |  Update rule (eg. `θ = θ - αVL`)     |  Adjusts model parameters (`θ`) to minimize loss.                   |
+|  **Gradient**        |  Vector of partial derivatives `∇L`  |  Direction of steepest ascent in loss.                              |
+|  **Optimizer**       |  Update rule (eg. `θ = θ - α∇L`)     |  Adjusts model parameters (`θ`) to minimize loss.                   |
 |  **Bias**            |  Scalar offset `b`                   |  Shifts output (e.g. `y = wx + b`)                                  |
 |  **Weight**          |  Scalar (or matrix) `y`              |  Scales input contribution (eg. `y = wx`)                           |
 |  **Hyperparameter**  |  Scalar (eg. learning rate `α`)      |  Configurable setting (not learned from data)                       |
@@ -53,3 +53,8 @@ Here's a mapping of common ML/DL/RL jargon into simple mathematical terms.
 
 ### Key Takeaway :spiral_notepad:
 
+- **Forward**: Pure function evaluation (`x → ŷ`)
+- **Backward Pass**: Gradient computation via chain rule (`∇θL`)
+- **Optimization**: Parameter updates (`θ = θ - α∇L`)
+- **Generalization**: Balancing bias-variance, regularization, and validation
+- **Reinforcement Learning**: Maximizing cumulative reward (`Vπ(s)`, `Qπ(s,a)`)
