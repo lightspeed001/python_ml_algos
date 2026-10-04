@@ -34,7 +34,7 @@ As an MLE you need to understand:
 - **Transformer encoder (_for sequence classification_)**: Transformers are widely used for language, time series, and other sequence problems. Unlike an LSTM a Transformer can process sequence positions in parrallel.
 - **Autoencoder (_for dimentionality reduction_)**: An autoencoder learns to reconstruct its input. It can be used for compression, denoising and anomaly detection.
 
-### Advanced Deep Learning Algorithms 
+### Advanced Deep Learning Algorithms :closed_lock_with_key:
 
 - **Diffusion**: A network predicts noise conditioned on a timestamp, then iteratively denoises
 - **GNN**: For Non_euclidean data eg. molecules, social networks, recommendation systems
@@ -49,6 +49,10 @@ As an MLE you need to understand:
 - __Policy Gradient__ (_REINFORCE_): A policy-based method that directly optimizes the policy.
 - __Proximal Policy__ Optimization (_PPO_): A modern policy gradient method with clipped objective.
 - __Soft Actor-Critic__ (_SAC_): A state-of-the-art RL algorithm that optimizes for entropy-regulated rewards.
+
+### Mapping DL, RL Jargon To Simple Math :capital_abcd:
+
+- [ML Jargon To Simple Math](math/README.md)
 
 **Questions to ask?**
 
