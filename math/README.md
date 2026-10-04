@@ -46,3 +46,10 @@ Here's a mapping of common ML/DL/RL jargon into simple mathematical terms.
 |  **Exploration**       |  Stochastic policy `π(a|s)`             |  Balances trying new actions vs. exploiting known rewards (eg. ε-greedy)  |            
 
 
+### General ML/DL/RL Jargon (Math Translations) :computer:
+|  **Term**              |  **Math Equivalent**                    |  **Explanation**                                                          |
+|------------------------|-----------------------------------------|---------------------------------------------------------------------------|
+|
+
+### Key Takeaway :spiral_notepad:
+
