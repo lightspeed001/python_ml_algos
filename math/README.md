@@ -19,10 +19,11 @@ Here's a mapping of common ML/DL/RL jargon into simple mathematical terms.
 
 
 ### Deep Learning (DL) Jargon :ocean:
+
 |  **Term**            |  **Math Equivalent**                    |  **Explanation**                                                    |
 |----------------------|-----------------------------------------|---------------------------------------------------------------------|
 |  **Tensor**          |  Multi-dimensional array (eg. `ℝⁿˣᵐˣᵏ`) |  Generalization of vectors/matrices (eg. 3D for RGB images)         |
-|  **Layer**           |  Function composition `fₙ ∘ fₙ₋₁ ∘ ...` |  Stacked transformations (eg. `ReLU(Wx + b)`)                       |                            
+|  **Layer**           |  Function composition `fₙ ∘ fₙ₋₁ ∘ ...` |  Stacked transformations (eg. `ReLU(Wx + b)`)                       |  
 |  **Activation**      |  Nonlinear function `σ(z)`              |  Introduces nonlinearity (eg. `ReLU(z) = max(0, z)`)                |
 |  **Batch**           |  Subset of data `X ∈ ℝᵇˣⁿ`              |  Mini batch of `b` samples, each with `n` features.                 |
 |  **Epoch**           |  Full pass over dataset `D`             |  One iteration over all training data.                              |
@@ -43,13 +44,43 @@ Here's a mapping of common ML/DL/RL jargon into simple mathematical terms.
 |  **Q-Function**        |  `Qπ(s,a) = ℝ[Σγᵗrₜ | s₀ = s, a₀ = a]`  |  Expected return for taking action `a` i state `s`.                       |
 |  **Discount Factor**   |  Scalar  `γ ∈ [0,1]`                    |  Weighs future rewards (eg. `y=0.9` priorities immediate rewards)         |
 |  **Bellman Equation**  |  Recursive update `V(s) = r + γV(s')`   |  Relate value of a state to its successor.                                |
-|  **Exploration**       |  Stochastic policy `π(a|s)`             |  Balances trying new actions vs. exploiting known rewards (eg. ε-greedy)  |            
+|  **Exploration**       |  Stochastic policy `π(a|s)`             |  Balances trying new actions vs. exploiting known rewards (eg. ε-greedy)  |  
 
 
 ### General ML/DL/RL Jargon (Math Translations) :computer:
+
 |  **Term**              |  **Math Equivalent**                    |  **Explanation**                                                          |
 |------------------------|-----------------------------------------|---------------------------------------------------------------------------|
 |
+
+### **Key Differences**
+
+| **Aspect**       | **Forward Pass**               	 | **Backward Pass**               |
+|------------------|-------------------------------------|---------------------------------|
+|	**Purpose**    | Compute output (`ŷ`)				 | Compute gradients (`∇θL`)	   |
+|	**Direction**  | Input --> Output					 | Output --> Input				   |
+|	**Operations** | Matrix multiplications, activations | Chain rule, derivatives		   |
+|	**Used for**   | Inference, loss computation		 | Parameter updates (training)	   |
+
+- Code example (Backwards Pass):
+
+```python
+import torch
+
+# forward pass
+x = torch.tensor([1.0, 2.0])
+W = torch.tensor([0.5, -0.3], [0.1, 0.4])
+b = torch.tensor([0.2, -0.1])
+z = torch.matmul(x, W) + b # Linear tranformation
+y_pred = torch.relu(z) # Activation
+
+# Backward pass (automatic in PyTorch)
+loss = (y_pred - torch.tensor([1.0, 0.5])) ** 2
+loss.backward() # Computes ∇W, ∇b, etc.
+
+print("Gradients:", W.grad, b.grad)
+```
+
 
 ### Key Takeaway :spiral_notepad:
 
