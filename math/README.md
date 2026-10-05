@@ -81,7 +81,6 @@ loss.backward() # Computes ∇W, ∇b, etc.
 print("Gradients:", W.grad, b.grad)
 ```
 
-
 ### Key Takeaway :spiral_notepad:
 
 - **Forward**: Pure function evaluation (`x → ŷ`)
@@ -89,3 +88,32 @@ print("Gradients:", W.grad, b.grad)
 - **Optimization**: Parameter updates (`θ = θ - α∇L`)
 - **Generalization**: Balancing bias-variance, regularization, and validation
 - **Reinforcement Learning**: Maximizing cumulative reward (`Vπ(s)`, `Qπ(s,a)`)
+
+### **Timeline: Autoencoders vs Transformers**
+
+| **Year** | **Model**               	| **Key Contribution**                                                   	| **Relation to Autoencoders**                     | **1986** | Autoencoder (Hilton et al) | First formalization of the autoencoder as NNs for unsupervided learning   | Foundational work
+| 1990s	   | Variational Autoencoders   | Introduced probabalistic latent spaces (`z ~ N(μ, σ²)`)					| Extentionof auto encoders
+| 2012	   | AlexNet (CNN)				| Popularized DL: autoencoders were already widely used for feature learning| Autoencoders were a standard tool in DL
+| 2014	   | GANs (Goodfellow et. al)   | AE like desgns for generative modelling									| Built on AE principles
+| 2017	   | Transformers (Vaswani etc.)| Self attention mechs for sequence modelling.								| Not related to AE
+| 2018	   | ViT						| Tranformers to image data (AE like patch embeddings)						| Hybrid approches emerged later.
+
+__Key differences:__ :bulb:
+
+| **Aspect**            | **Autoencoders**                          	| **Transformers**                          				|
+|-----------------------|-----------------------------------------------|-----------------------------------------------------------|
+| **Core Idea**			| Compress/ reconstruct data (`x → z → x̂`)  	| Model long-range dependencies via attention (`x → z → y`).|
+| **Architecture**		| Encoder-decoder (eg. CNN/RNN)					| Self-attention + feed-forward layers.						|
+| **Training Objective**| Minimize reconstruction error (`||x - x̂||²`)	| Maximize sequence likelihood (eg. `P(y|x)`)				|
+| **Use Cases**			| DR, Anamoly detection, Gen models				| NLP, vision, time-series, multimodal tasks				|
+| **First proposed**	| **1986** (Hitlton et al.)						| **2017**													|
+
+
+__Summary__ :notebook:
+
+- Autoencoders (1986): came first and are still widely used
+- Transformers: area separate breakthrough for sequence modelling
+- Modern Hybrids (eg. MAE): combine both for tasks like self supervised learning
+
+
+
